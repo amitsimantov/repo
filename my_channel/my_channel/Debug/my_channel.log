@@ -1,0 +1,9 @@
+﻿  my_channel.c
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(203): warning C4133: 'function': incompatible types - from 'sockaddr_in *' to 'const sockaddr *'
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(203): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(203): warning C4024: 'sendto': different types for formal and actual parameter 6
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(218): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(218): warning C4024: 'sendto': different types for formal and actual parameter 6
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(125): warning C4101: 'counter': unreferenced local variable
+c:\users\amit siman tov\documents\studies\4th\b\computernetworks#c\my_channel\my_channel\my_channel.c(125): warning C4101: 'ch': unreferenced local variable
+  my_channel.vcxproj -> C:\Users\Amit Siman Tov\Documents\Studies\4th\B\ComputerNetworks#C\my_channel\Debug\my_channel.exe
