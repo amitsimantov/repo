@@ -96,18 +96,13 @@ int add_noise_to_msg(int seed, int n, char* msg, int len) {
 		for (j = 0; j < 15; j++) {
 			k = (double)rand() / RAND_MAX;
 			if (k < p) {
-				//printf("\nrand()/RANDMAX=%lf < p=%lf\n", k, p);
-				//printf("########################  ON BLOCK %d FLIPPING BIT %d###################### \n\n", i, j+1);
 				bit = GET_BIT(msg, i * 15 + j);
 				if (bit) {
-					//printf("bit was: %d\n", bit);
 					RESET_BIT(msg, i * 15 + j);
-					//printf("and now bit is: %d\n", GET_BIT(msg, i * 8 + j));
 				}
 				else {
-					//printf("bit was: %d\n", bit);
 					SET_BIT(msg, i * 15 + j);
-					//printf("and now bit is: %d\n", GET_BIT(msg, i * 8 + j));
+
 				}
 				flipped++;
 				//printf("###################### FLIPPED COUNTER: {%d}  ######################## \n\n", flipped);
@@ -129,16 +124,9 @@ int main(int argc, char* argv[]) {
 		_error("malloc() failed!\n");
 	
 	sscanf(argv[1], "%d", &ch_port);
-	//sscanf(argv[2], "%s", &dest_ip);
 	sscanf(argv[3], "%d", &receiver_port);
 	sscanf(argv[4], "%d", &n);
 	sscanf(argv[5], "%d", &seed);
-
-	//fprintf(stderr, "Channel_port: %d\n", htons(ch_port));
-	//fprintf(stderr, "Dest_ip: %s\n", receiver_ip);
-	//fprintf(stderr, "Dest_port: %d\n", htons(receiver_port));
-	//fprintf(stderr, "N: %d\n", n);
-	//fprintf(stderr, "Seed: %d\n", seed);
 
 	WSADATA wsaData;
 	int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
