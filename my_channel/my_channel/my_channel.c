@@ -128,6 +128,7 @@ int main(int argc, char* argv[]) {
 	sscanf(argv[4], "%d", &n);
 	sscanf(argv[5], "%d", &seed);
 
+	//fprintf(stderr, "Channel_port: %d\n", htons(ch_port));
 	WSADATA wsaData;
 	int iResult = WSAStartup(MAKEWORD(2, 2), &wsaData);
 	if (iResult != NO_ERROR)
