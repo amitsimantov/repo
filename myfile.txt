@@ -3,3 +3,6 @@ Adding a new file
 Adding a new line to the file <-
 
 some work
+
+creating a conflict
+
