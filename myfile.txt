@@ -2,8 +2,4 @@ Adding a new file
 
 Adding a new line to the file <-
 
-<<<<<<< HEAD
-now im working on the file...
-=======
-creating a conflict
->>>>>>> 2ad93da4fd766884f3ca903312b280d036a63d26
+some work
